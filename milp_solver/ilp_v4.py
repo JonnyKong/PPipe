@@ -10,9 +10,8 @@ from typing import Optional
 import gurobipy as gp
 import numpy as np
 import pandas as pd
+from contract_layers import read_layerwise_runtime
 from gurobipy import GRB
-
-from .contract_layers import read_layerwise_runtime
 
 
 class RuntimeFmt(IntEnum):
@@ -44,14 +43,7 @@ def get_even_runtime_prepartition_mapping_dir():
 
 
 def get_datadir():
-    datadirs = [
-        '.',
-        '/export2/kong102/clusterserving_results',
-    ]
-    for d in datadirs:
-        if (Path(d) / 'layer-timing-final').exists():
-            return Path(d)
-    assert False
+    return Path('./data')
 
 
 def find_best_contraction_mapping_tag(dir: Path):
@@ -117,6 +109,7 @@ def read_runtime_from_layerwise_profiling(dnn, gpu, mps_id):
     # df = df.iloc[:50, :]    # TODO: remove this
     df.columns = np.arange(len(df.columns))
     return df
+
 
 def read_runtime_from_layerwise_profiling_w_even_runtime_partition(dnn, gpu, mps_id):
     df = read_layerwise_runtime(get_layerwise_profiling_path(dnn, f'{gpu}-{mps_id + 1}'))

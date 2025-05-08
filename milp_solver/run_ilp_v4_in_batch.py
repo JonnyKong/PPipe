@@ -2,7 +2,6 @@ import bisect
 import copy
 import itertools
 import json
-import sys
 import time
 from dataclasses import asdict
 from pathlib import Path
@@ -10,16 +9,15 @@ from pathlib import Path
 import gurobipy as gp
 import numpy as np
 import pandas as pd
+from contract_layers import read_layerwise_runtime
+from group_dnns import get_random_grouping
 from gurobipy import GRB
-
-from .contract_layers import read_layerwise_runtime
-from .group_dnns import get_random_grouping
-from .ilp_v4 import get_datadir
-from .ilp_v4 import MultitaskCluster
-from .ilp_v4 import MultitaskConfig
-from .ilp_v4 import read_runtime_from_blockwise_profiling
-from .ilp_v4 import read_runtime_from_layerwise_profiling
-from .ilp_v4 import RuntimeFmt
+from ilp_v4 import get_datadir
+from ilp_v4 import MultitaskCluster
+from ilp_v4 import MultitaskConfig
+from ilp_v4 import read_runtime_from_blockwise_profiling
+from ilp_v4 import read_runtime_from_layerwise_profiling
+from ilp_v4 import RuntimeFmt
 
 
 def get_dnn_runtime(dnn):
@@ -287,12 +285,9 @@ def main_multitask_v2(sla_discount=0.0, group_size=3, workload_weights=None):
     first hour of the MAF '19 trace to 3 DNNs round-robin, which gave a weight
     ratio of [0.30, 0.33, 0.37].
     """
-    dnn_name_arr = pd.read_csv(
-        "scripts/trt/model-zoo/selected_models.txt", sep=" ", header=None
-    )[0].to_numpy()
+    dnn_name_arr = pd.read_csv("./data/model_list.txt", sep=" ", header=None)[0].to_numpy()
 
     def get_2gpu_configs():
-        # dnn_name_arr_arr = list(itertools.combinations(sorted(dnn_name_arr), group_size))
         dnn_name_arr_arr = get_random_grouping(dnn_name_arr, group_size=group_size, seed=17)
         clusters = [
             [["V100", "T4"], [25, 75], True, 2, [4, 4], [4, 2], 10],
@@ -380,8 +375,8 @@ def main_multitask_v2(sla_discount=0.0, group_size=3, workload_weights=None):
                     ),
                     f"plan_{scheduler}": json.dumps(plan, indent=2),
                 }
-            Path("plans").mkdir(exist_ok=True)
-            with open(f"plans/{tag}_{scheduler}.json", "w") as f:
+            Path("outputs/plans").mkdir(exist_ok=True, parents=True)
+            with open(f"outputs/plans/{tag}_{scheduler}.json", "w") as f:
                 json.dump(plan, f, indent=2)
 
         df = pd.concat([df, pd.json_normalize(row)])
