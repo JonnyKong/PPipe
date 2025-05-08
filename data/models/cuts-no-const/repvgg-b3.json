@@ -1,0 +1,394 @@
+[
+    {
+        "node": "$input$",
+        "cut": [
+            "input"
+        ]
+    },
+    {
+        "node": "/stage0/rbr_reparam/Conv",
+        "cut": [
+            "/stage0/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage0/nonlinearity/Relu",
+        "cut": [
+            "/stage0/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage1/stage1.0/rbr_reparam/Conv",
+        "cut": [
+            "/stage1/stage1.0/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage1/stage1.0/nonlinearity/Relu",
+        "cut": [
+            "/stage1/stage1.0/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage1/stage1.1/rbr_reparam/Conv",
+        "cut": [
+            "/stage1/stage1.1/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage1/stage1.1/nonlinearity/Relu",
+        "cut": [
+            "/stage1/stage1.1/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage1/stage1.2/rbr_reparam/Conv",
+        "cut": [
+            "/stage1/stage1.2/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage1/stage1.2/nonlinearity/Relu",
+        "cut": [
+            "/stage1/stage1.2/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage1/stage1.3/rbr_reparam/Conv",
+        "cut": [
+            "/stage1/stage1.3/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage1/stage1.3/nonlinearity/Relu",
+        "cut": [
+            "/stage1/stage1.3/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.0/rbr_reparam/Conv",
+        "cut": [
+            "/stage2/stage2.0/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.0/nonlinearity/Relu",
+        "cut": [
+            "/stage2/stage2.0/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.1/rbr_reparam/Conv",
+        "cut": [
+            "/stage2/stage2.1/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.1/nonlinearity/Relu",
+        "cut": [
+            "/stage2/stage2.1/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.2/rbr_reparam/Conv",
+        "cut": [
+            "/stage2/stage2.2/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.2/nonlinearity/Relu",
+        "cut": [
+            "/stage2/stage2.2/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.3/rbr_reparam/Conv",
+        "cut": [
+            "/stage2/stage2.3/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.3/nonlinearity/Relu",
+        "cut": [
+            "/stage2/stage2.3/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.4/rbr_reparam/Conv",
+        "cut": [
+            "/stage2/stage2.4/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.4/nonlinearity/Relu",
+        "cut": [
+            "/stage2/stage2.4/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.5/rbr_reparam/Conv",
+        "cut": [
+            "/stage2/stage2.5/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage2/stage2.5/nonlinearity/Relu",
+        "cut": [
+            "/stage2/stage2.5/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.0/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.0/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.0/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.0/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.1/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.1/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.1/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.1/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.2/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.2/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.2/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.2/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.3/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.3/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.3/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.3/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.4/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.4/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.4/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.4/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.5/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.5/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.5/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.5/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.6/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.6/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.6/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.6/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.7/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.7/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.7/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.7/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.8/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.8/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.8/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.8/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.9/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.9/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.9/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.9/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.10/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.10/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.10/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.10/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.11/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.11/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.11/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.11/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.12/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.12/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.12/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.12/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.13/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.13/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.13/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.13/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.14/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.14/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.14/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.14/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.15/rbr_reparam/Conv",
+        "cut": [
+            "/stage3/stage3.15/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage3/stage3.15/nonlinearity/Relu",
+        "cut": [
+            "/stage3/stage3.15/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/stage4/stage4.0/rbr_reparam/Conv",
+        "cut": [
+            "/stage4/stage4.0/rbr_reparam/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/stage4/stage4.0/nonlinearity/Relu",
+        "cut": [
+            "/stage4/stage4.0/nonlinearity/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/gap/GlobalAveragePool",
+        "cut": [
+            "/gap/GlobalAveragePool_output_0"
+        ]
+    },
+    {
+        "node": "/Shape",
+        "cut": [
+            "/Shape_output_0",
+            "/gap/GlobalAveragePool_output_0"
+        ]
+    },
+    {
+        "node": "/Gather",
+        "cut": [
+            "/Gather_output_0",
+            "/gap/GlobalAveragePool_output_0"
+        ]
+    },
+    {
+        "node": "/Unsqueeze",
+        "cut": [
+            "/gap/GlobalAveragePool_output_0",
+            "/Unsqueeze_output_0"
+        ]
+    },
+    {
+        "node": "/Concat",
+        "cut": [
+            "/Concat_output_0",
+            "/gap/GlobalAveragePool_output_0"
+        ]
+    },
+    {
+        "node": "/Reshape",
+        "cut": [
+            "/Reshape_output_0"
+        ]
+    },
+    {
+        "node": "/linear/Gemm",
+        "cut": [
+            "output"
+        ]
+    },
+    {
+        "node": "$output$",
+        "cut": []
+    }
+]

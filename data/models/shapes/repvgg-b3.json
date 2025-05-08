@@ -1,0 +1,560 @@
+{
+    "input": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            3,
+            448,
+            448
+        ]
+    },
+    "/stage0/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            224,
+            224
+        ]
+    },
+    "/stage0/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            224,
+            224
+        ]
+    },
+    "/stage1/stage1.0/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            192,
+            112,
+            112
+        ]
+    },
+    "/stage1/stage1.0/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            192,
+            112,
+            112
+        ]
+    },
+    "/stage1/stage1.1/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            192,
+            112,
+            112
+        ]
+    },
+    "/stage1/stage1.1/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            192,
+            112,
+            112
+        ]
+    },
+    "/stage1/stage1.2/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            192,
+            112,
+            112
+        ]
+    },
+    "/stage1/stage1.2/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            192,
+            112,
+            112
+        ]
+    },
+    "/stage1/stage1.3/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            192,
+            112,
+            112
+        ]
+    },
+    "/stage1/stage1.3/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            192,
+            112,
+            112
+        ]
+    },
+    "/stage2/stage2.0/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.0/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.1/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.1/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.2/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.2/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.3/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.3/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.4/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.4/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.5/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage2/stage2.5/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            384,
+            56,
+            56
+        ]
+    },
+    "/stage3/stage3.0/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.0/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.1/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.1/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.2/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.2/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.3/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.3/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.4/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.4/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.5/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.5/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.6/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.6/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.7/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.7/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.8/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.8/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.9/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.9/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.10/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.10/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.11/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.11/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.12/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.12/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.13/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.13/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.14/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.14/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.15/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage3/stage3.15/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            768,
+            28,
+            28
+        ]
+    },
+    "/stage4/stage4.0/rbr_reparam/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2560,
+            14,
+            14
+        ]
+    },
+    "/stage4/stage4.0/nonlinearity/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2560,
+            14,
+            14
+        ]
+    },
+    "/gap/GlobalAveragePool_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2560,
+            1,
+            1
+        ]
+    },
+    "/Shape_output_0": {
+        "dtype": "<i8",
+        "shape": [
+            4
+        ]
+    },
+    "/Gather_output_0": {
+        "dtype": "<i8",
+        "shape": []
+    },
+    "/Unsqueeze_output_0": {
+        "dtype": "<i8",
+        "shape": [
+            1
+        ]
+    },
+    "/Concat_output_0": {
+        "dtype": "<i8",
+        "shape": [
+            2
+        ]
+    },
+    "/Reshape_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2560
+        ]
+    },
+    "output": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1000
+        ]
+    }
+}

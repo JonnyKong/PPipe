@@ -1,0 +1,551 @@
+{
+    "data_l": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1,
+            512,
+            512
+        ]
+    },
+    "/Sub_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1,
+            512,
+            512
+        ]
+    },
+    "/Div_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1,
+            512,
+            512
+        ]
+    },
+    "/model1/model1.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            512,
+            512
+        ]
+    },
+    "/model1/model1.1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            512,
+            512
+        ]
+    },
+    "/model1/model1.2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            256,
+            256
+        ]
+    },
+    "/model1/model1.3/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            256,
+            256
+        ]
+    },
+    "/model1/model1.4/BatchNormalization_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            256,
+            256
+        ]
+    },
+    "/model2/model2.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            256,
+            256
+        ]
+    },
+    "/model2/model2.1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            256,
+            256
+        ]
+    },
+    "/model2/model2.2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            128,
+            128
+        ]
+    },
+    "/model2/model2.3/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            128,
+            128
+        ]
+    },
+    "/model2/model2.4/BatchNormalization_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            128,
+            128
+        ]
+    },
+    "/model3/model3.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model3/model3.1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model3/model3.2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model3/model3.3/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model3/model3.4/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            64,
+            64
+        ]
+    },
+    "/model3/model3.5/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            64,
+            64
+        ]
+    },
+    "/model3/model3.6/BatchNormalization_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            64,
+            64
+        ]
+    },
+    "/model4/model4.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model4/model4.1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model4/model4.2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model4/model4.3/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model4/model4.4/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model4/model4.5/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model4/model4.6/BatchNormalization_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model5/model5.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model5/model5.1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model5/model5.2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model5/model5.3/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model5/model5.4/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model5/model5.5/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model5/model5.6/BatchNormalization_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model6/model6.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model6/model6.1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model6/model6.2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model6/model6.3/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model6/model6.4/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model6/model6.5/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model6/model6.6/BatchNormalization_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model7/model7.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model7/model7.1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model7/model7.2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model7/model7.3/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model7/model7.4/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model7/model7.5/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model7/model7.6/BatchNormalization_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            64,
+            64
+        ]
+    },
+    "/model8/model8.0/ConvTranspose_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model8/model8.1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model8/model8.2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model8/model8.3/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model8/model8.4/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model8/model8.5/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            128,
+            128
+        ]
+    },
+    "/model8/model8.6/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            313,
+            128,
+            128
+        ]
+    },
+    "/softmax/Transpose_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            128,
+            313
+        ]
+    },
+    "/softmax/Softmax_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            128,
+            313
+        ]
+    },
+    "/softmax/Transpose_1_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            313,
+            128,
+            128
+        ]
+    },
+    "/model_out/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2,
+            128,
+            128
+        ]
+    },
+    "/upsample4/Resize_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2,
+            512,
+            512
+        ]
+    },
+    "color_ab": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2,
+            512,
+            512
+        ]
+    }
+}

@@ -1,0 +1,372 @@
+[
+    {
+        "node": "$input$",
+        "cut": [
+            "data_l"
+        ]
+    },
+    {
+        "node": "/Sub",
+        "cut": [
+            "/Sub_output_0"
+        ]
+    },
+    {
+        "node": "/Div",
+        "cut": [
+            "/Div_output_0"
+        ]
+    },
+    {
+        "node": "/model1/model1.0/Conv",
+        "cut": [
+            "/model1/model1.0/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model1/model1.1/Relu",
+        "cut": [
+            "/model1/model1.1/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model1/model1.2/Conv",
+        "cut": [
+            "/model1/model1.2/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model1/model1.3/Relu",
+        "cut": [
+            "/model1/model1.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model1/model1.4/BatchNormalization",
+        "cut": [
+            "/model1/model1.4/BatchNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model2/model2.0/Conv",
+        "cut": [
+            "/model2/model2.0/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model2/model2.1/Relu",
+        "cut": [
+            "/model2/model2.1/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model2/model2.2/Conv",
+        "cut": [
+            "/model2/model2.2/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model2/model2.3/Relu",
+        "cut": [
+            "/model2/model2.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model2/model2.4/BatchNormalization",
+        "cut": [
+            "/model2/model2.4/BatchNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model3/model3.0/Conv",
+        "cut": [
+            "/model3/model3.0/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model3/model3.1/Relu",
+        "cut": [
+            "/model3/model3.1/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model3/model3.2/Conv",
+        "cut": [
+            "/model3/model3.2/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model3/model3.3/Relu",
+        "cut": [
+            "/model3/model3.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model3/model3.4/Conv",
+        "cut": [
+            "/model3/model3.4/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model3/model3.5/Relu",
+        "cut": [
+            "/model3/model3.5/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model3/model3.6/BatchNormalization",
+        "cut": [
+            "/model3/model3.6/BatchNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model4/model4.0/Conv",
+        "cut": [
+            "/model4/model4.0/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model4/model4.1/Relu",
+        "cut": [
+            "/model4/model4.1/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model4/model4.2/Conv",
+        "cut": [
+            "/model4/model4.2/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model4/model4.3/Relu",
+        "cut": [
+            "/model4/model4.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model4/model4.4/Conv",
+        "cut": [
+            "/model4/model4.4/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model4/model4.5/Relu",
+        "cut": [
+            "/model4/model4.5/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model4/model4.6/BatchNormalization",
+        "cut": [
+            "/model4/model4.6/BatchNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model5/model5.0/Conv",
+        "cut": [
+            "/model5/model5.0/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model5/model5.1/Relu",
+        "cut": [
+            "/model5/model5.1/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model5/model5.2/Conv",
+        "cut": [
+            "/model5/model5.2/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model5/model5.3/Relu",
+        "cut": [
+            "/model5/model5.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model5/model5.4/Conv",
+        "cut": [
+            "/model5/model5.4/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model5/model5.5/Relu",
+        "cut": [
+            "/model5/model5.5/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model5/model5.6/BatchNormalization",
+        "cut": [
+            "/model5/model5.6/BatchNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model6/model6.0/Conv",
+        "cut": [
+            "/model6/model6.0/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model6/model6.1/Relu",
+        "cut": [
+            "/model6/model6.1/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model6/model6.2/Conv",
+        "cut": [
+            "/model6/model6.2/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model6/model6.3/Relu",
+        "cut": [
+            "/model6/model6.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model6/model6.4/Conv",
+        "cut": [
+            "/model6/model6.4/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model6/model6.5/Relu",
+        "cut": [
+            "/model6/model6.5/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model6/model6.6/BatchNormalization",
+        "cut": [
+            "/model6/model6.6/BatchNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model7/model7.0/Conv",
+        "cut": [
+            "/model7/model7.0/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model7/model7.1/Relu",
+        "cut": [
+            "/model7/model7.1/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model7/model7.2/Conv",
+        "cut": [
+            "/model7/model7.2/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model7/model7.3/Relu",
+        "cut": [
+            "/model7/model7.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model7/model7.4/Conv",
+        "cut": [
+            "/model7/model7.4/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model7/model7.5/Relu",
+        "cut": [
+            "/model7/model7.5/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model7/model7.6/BatchNormalization",
+        "cut": [
+            "/model7/model7.6/BatchNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model8/model8.0/ConvTranspose",
+        "cut": [
+            "/model8/model8.0/ConvTranspose_output_0"
+        ]
+    },
+    {
+        "node": "/model8/model8.1/Relu",
+        "cut": [
+            "/model8/model8.1/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model8/model8.2/Conv",
+        "cut": [
+            "/model8/model8.2/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model8/model8.3/Relu",
+        "cut": [
+            "/model8/model8.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model8/model8.4/Conv",
+        "cut": [
+            "/model8/model8.4/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model8/model8.5/Relu",
+        "cut": [
+            "/model8/model8.5/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model8/model8.6/Conv",
+        "cut": [
+            "/model8/model8.6/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/softmax/Transpose",
+        "cut": [
+            "/softmax/Transpose_output_0"
+        ]
+    },
+    {
+        "node": "/softmax/Softmax",
+        "cut": [
+            "/softmax/Softmax_output_0"
+        ]
+    },
+    {
+        "node": "/softmax/Transpose_1",
+        "cut": [
+            "/softmax/Transpose_1_output_0"
+        ]
+    },
+    {
+        "node": "/model_out/Conv",
+        "cut": [
+            "/model_out/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/upsample4/Resize",
+        "cut": [
+            "/upsample4/Resize_output_0"
+        ]
+    },
+    {
+        "node": "/Mul",
+        "cut": [
+            "color_ab"
+        ]
+    },
+    {
+        "node": "$output$",
+        "cut": []
+    }
+]

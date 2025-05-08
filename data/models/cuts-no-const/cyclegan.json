@@ -1,0 +1,621 @@
+[
+    {
+        "node": "$input$",
+        "cut": [
+            "input0"
+        ]
+    },
+    {
+        "node": "/model/model.0/Pad",
+        "cut": [
+            "/model/model.0/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.1/Conv",
+        "cut": [
+            "/model/model.1/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.2/InstanceNormalization",
+        "cut": [
+            "/model/model.2/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.3/Relu",
+        "cut": [
+            "/model/model.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.4/Conv",
+        "cut": [
+            "/model/model.4/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.5/InstanceNormalization",
+        "cut": [
+            "/model/model.5/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.6/Relu",
+        "cut": [
+            "/model/model.6/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.7/Conv",
+        "cut": [
+            "/model/model.7/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.8/InstanceNormalization",
+        "cut": [
+            "/model/model.8/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.9/Relu",
+        "cut": [
+            "/model/model.9/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.10/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.10/conv_block/conv_block.0/Pad_output_0",
+            "/model/model.9/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.10/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.10/conv_block/conv_block.1/Conv_output_0",
+            "/model/model.9/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.10/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.10/conv_block/conv_block.2/InstanceNormalization_output_0",
+            "/model/model.9/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.10/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.10/conv_block/conv_block.3/Relu_output_0",
+            "/model/model.9/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.10/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.10/conv_block/conv_block.5/Pad_output_0",
+            "/model/model.9/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.10/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.10/conv_block/conv_block.6/Conv_output_0",
+            "/model/model.9/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.10/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.10/conv_block/conv_block.7/InstanceNormalization_output_0",
+            "/model/model.9/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.10/Add",
+        "cut": [
+            "/model/model.10/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.11/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.10/Add_output_0",
+            "/model/model.11/conv_block/conv_block.0/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.11/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.11/conv_block/conv_block.1/Conv_output_0",
+            "/model/model.10/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.11/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.11/conv_block/conv_block.2/InstanceNormalization_output_0",
+            "/model/model.10/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.11/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.11/conv_block/conv_block.3/Relu_output_0",
+            "/model/model.10/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.11/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.10/Add_output_0",
+            "/model/model.11/conv_block/conv_block.5/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.11/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.10/Add_output_0",
+            "/model/model.11/conv_block/conv_block.6/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.11/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.11/conv_block/conv_block.7/InstanceNormalization_output_0",
+            "/model/model.10/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.11/Add",
+        "cut": [
+            "/model/model.11/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.12/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.12/conv_block/conv_block.0/Pad_output_0",
+            "/model/model.11/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.12/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.12/conv_block/conv_block.1/Conv_output_0",
+            "/model/model.11/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.12/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.12/conv_block/conv_block.2/InstanceNormalization_output_0",
+            "/model/model.11/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.12/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.12/conv_block/conv_block.3/Relu_output_0",
+            "/model/model.11/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.12/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.12/conv_block/conv_block.5/Pad_output_0",
+            "/model/model.11/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.12/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.12/conv_block/conv_block.6/Conv_output_0",
+            "/model/model.11/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.12/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.12/conv_block/conv_block.7/InstanceNormalization_output_0",
+            "/model/model.11/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.12/Add",
+        "cut": [
+            "/model/model.12/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.13/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.13/conv_block/conv_block.0/Pad_output_0",
+            "/model/model.12/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.13/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.13/conv_block/conv_block.1/Conv_output_0",
+            "/model/model.12/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.13/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.13/conv_block/conv_block.2/InstanceNormalization_output_0",
+            "/model/model.12/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.13/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.13/conv_block/conv_block.3/Relu_output_0",
+            "/model/model.12/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.13/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.13/conv_block/conv_block.5/Pad_output_0",
+            "/model/model.12/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.13/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.13/conv_block/conv_block.6/Conv_output_0",
+            "/model/model.12/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.13/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.13/conv_block/conv_block.7/InstanceNormalization_output_0",
+            "/model/model.12/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.13/Add",
+        "cut": [
+            "/model/model.13/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.14/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.13/Add_output_0",
+            "/model/model.14/conv_block/conv_block.0/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.14/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.13/Add_output_0",
+            "/model/model.14/conv_block/conv_block.1/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.14/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.13/Add_output_0",
+            "/model/model.14/conv_block/conv_block.2/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.14/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.13/Add_output_0",
+            "/model/model.14/conv_block/conv_block.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.14/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.13/Add_output_0",
+            "/model/model.14/conv_block/conv_block.5/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.14/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.13/Add_output_0",
+            "/model/model.14/conv_block/conv_block.6/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.14/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.13/Add_output_0",
+            "/model/model.14/conv_block/conv_block.7/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.14/Add",
+        "cut": [
+            "/model/model.14/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.15/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.14/Add_output_0",
+            "/model/model.15/conv_block/conv_block.0/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.15/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.14/Add_output_0",
+            "/model/model.15/conv_block/conv_block.1/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.15/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.14/Add_output_0",
+            "/model/model.15/conv_block/conv_block.2/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.15/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.14/Add_output_0",
+            "/model/model.15/conv_block/conv_block.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.15/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.14/Add_output_0",
+            "/model/model.15/conv_block/conv_block.5/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.15/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.14/Add_output_0",
+            "/model/model.15/conv_block/conv_block.6/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.15/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.14/Add_output_0",
+            "/model/model.15/conv_block/conv_block.7/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.15/Add",
+        "cut": [
+            "/model/model.15/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.16/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.16/conv_block/conv_block.0/Pad_output_0",
+            "/model/model.15/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.16/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.16/conv_block/conv_block.1/Conv_output_0",
+            "/model/model.15/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.16/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.16/conv_block/conv_block.2/InstanceNormalization_output_0",
+            "/model/model.15/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.16/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.16/conv_block/conv_block.3/Relu_output_0",
+            "/model/model.15/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.16/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.16/conv_block/conv_block.5/Pad_output_0",
+            "/model/model.15/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.16/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.16/conv_block/conv_block.6/Conv_output_0",
+            "/model/model.15/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.16/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.16/conv_block/conv_block.7/InstanceNormalization_output_0",
+            "/model/model.15/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.16/Add",
+        "cut": [
+            "/model/model.16/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.17/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.16/Add_output_0",
+            "/model/model.17/conv_block/conv_block.0/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.17/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.16/Add_output_0",
+            "/model/model.17/conv_block/conv_block.1/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.17/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.16/Add_output_0",
+            "/model/model.17/conv_block/conv_block.2/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.17/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.16/Add_output_0",
+            "/model/model.17/conv_block/conv_block.3/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.17/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.16/Add_output_0",
+            "/model/model.17/conv_block/conv_block.5/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.17/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.16/Add_output_0",
+            "/model/model.17/conv_block/conv_block.6/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.17/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.16/Add_output_0",
+            "/model/model.17/conv_block/conv_block.7/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.17/Add",
+        "cut": [
+            "/model/model.17/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.18/conv_block/conv_block.0/Pad",
+        "cut": [
+            "/model/model.17/Add_output_0",
+            "/model/model.18/conv_block/conv_block.0/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.18/conv_block/conv_block.1/Conv",
+        "cut": [
+            "/model/model.17/Add_output_0",
+            "/model/model.18/conv_block/conv_block.1/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.18/conv_block/conv_block.2/InstanceNormalization",
+        "cut": [
+            "/model/model.17/Add_output_0",
+            "/model/model.18/conv_block/conv_block.2/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.18/conv_block/conv_block.3/Relu",
+        "cut": [
+            "/model/model.18/conv_block/conv_block.3/Relu_output_0",
+            "/model/model.17/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.18/conv_block/conv_block.5/Pad",
+        "cut": [
+            "/model/model.18/conv_block/conv_block.5/Pad_output_0",
+            "/model/model.17/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.18/conv_block/conv_block.6/Conv",
+        "cut": [
+            "/model/model.17/Add_output_0",
+            "/model/model.18/conv_block/conv_block.6/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.18/conv_block/conv_block.7/InstanceNormalization",
+        "cut": [
+            "/model/model.17/Add_output_0",
+            "/model/model.18/conv_block/conv_block.7/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.18/Add",
+        "cut": [
+            "/model/model.18/Add_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.19/ConvTranspose",
+        "cut": [
+            "/model/model.19/ConvTranspose_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.20/InstanceNormalization",
+        "cut": [
+            "/model/model.20/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.21/Relu",
+        "cut": [
+            "/model/model.21/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.22/ConvTranspose",
+        "cut": [
+            "/model/model.22/ConvTranspose_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.23/InstanceNormalization",
+        "cut": [
+            "/model/model.23/InstanceNormalization_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.24/Relu",
+        "cut": [
+            "/model/model.24/Relu_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.25/Pad",
+        "cut": [
+            "/model/model.25/Pad_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.26/Conv",
+        "cut": [
+            "/model/model.26/Conv_output_0"
+        ]
+    },
+    {
+        "node": "/model/model.27/Tanh",
+        "cut": [
+            "output"
+        ]
+    },
+    {
+        "node": "$output$",
+        "cut": []
+    }
+]

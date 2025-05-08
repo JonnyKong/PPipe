@@ -1,0 +1,2176 @@
+{
+    "input0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            3,
+            518,
+            518
+        ]
+    },
+    "/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            259,
+            259
+        ]
+    },
+    "/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            259,
+            259
+        ]
+    },
+    "/maxpool/MaxPool_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            64,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.0/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.0/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.0/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.0/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.0/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.0/downsample/downsample.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.0/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.0/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.1/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.1/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.1/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.1/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.1/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.1/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.1/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.2/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.2/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.2/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.2/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            128,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.2/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.2/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer1/layer1.2/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer2/layer2.0/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer2/layer2.0/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            130,
+            130
+        ]
+    },
+    "/layer2/layer2.0/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.0/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.0/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.0/downsample/downsample.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.0/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.0/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.1/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.1/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.1/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.1/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.1/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.1/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.1/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.2/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.2/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.2/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.2/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.2/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.2/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.2/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.3/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.3/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.3/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.3/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            256,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.3/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.3/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer2/layer2.3/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer3/layer3.0/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer3/layer3.0/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            65,
+            65
+        ]
+    },
+    "/layer3/layer3.0/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.0/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.0/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.0/downsample/downsample.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.0/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.0/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.1/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.1/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.1/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.1/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.1/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.1/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.1/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.2/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.2/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.2/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.2/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.2/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.2/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.2/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.3/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.3/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.3/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.3/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.3/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.3/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.3/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.4/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.4/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.4/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.4/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.4/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.4/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.4/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.5/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.5/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.5/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.5/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.5/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.5/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.5/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.6/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.6/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.6/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.6/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.6/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.6/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.6/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.7/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.7/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.7/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.7/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.7/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.7/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.7/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.8/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.8/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.8/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.8/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.8/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.8/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.8/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.9/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.9/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.9/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.9/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.9/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.9/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.9/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.10/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.10/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.10/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.10/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.10/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.10/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.10/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.11/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.11/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.11/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.11/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.11/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.11/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.11/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.12/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.12/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.12/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.12/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.12/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.12/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.12/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.13/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.13/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.13/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.13/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.13/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.13/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.13/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.14/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.14/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.14/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.14/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.14/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.14/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.14/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.15/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.15/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.15/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.15/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.15/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.15/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.15/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.16/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.16/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.16/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.16/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.16/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.16/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.16/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.17/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.17/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.17/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.17/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.17/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.17/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.17/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.18/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.18/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.18/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.18/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.18/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.18/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.18/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.19/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.19/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.19/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.19/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.19/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.19/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.19/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.20/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.20/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.20/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.20/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.20/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.20/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.20/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.21/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.21/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.21/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.21/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.21/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.21/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.21/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.22/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.22/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.22/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.22/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            512,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.22/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.22/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer3/layer3.22/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer4/layer4.0/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer4/layer4.0/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            33,
+            33
+        ]
+    },
+    "/layer4/layer4.0/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.0/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.0/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.0/downsample/downsample.0/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.0/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.0/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.1/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.1/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.1/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.1/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.1/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.1/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.1/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.2/conv1/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.2/relu/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.2/conv2/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.2/relu_1/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1024,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.2/conv3/Conv_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.2/Add_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/layer4/layer4.2/relu_2/Relu_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            17,
+            17
+        ]
+    },
+    "/avgpool/GlobalAveragePool_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048,
+            1,
+            1
+        ]
+    },
+    "/Flatten_output_0": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            2048
+        ]
+    },
+    "output": {
+        "dtype": "<f4",
+        "shape": [
+            -1,
+            1000
+        ]
+    }
+}
