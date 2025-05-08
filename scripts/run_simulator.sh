@@ -49,8 +49,8 @@ function main_results_maf19() {
 }
 
 function main_results_maf21() {
-    PLANS_DIR=${DATA_DIR}/plans_5xL4sla_block-timing/tf32sla-3dnns_padding-0.4_workload-weights-0.39-0.26-0.35
-    LOGS_DIR=outputs/cluster-logs/tf32sla-3dnns_padding-0.4_workload-weights-0.39-0.26-0.35_maf21
+    PLANS_DIR=${DATA_DIR}/plans/maf21
+    LOGS_DIR=outputs/cluster-logs/maf21
     check_and_confirm_overwrite ${LOGS_DIR}
 
     python scripts/run_sim_in_batch.py multi_dnn_maf21 \

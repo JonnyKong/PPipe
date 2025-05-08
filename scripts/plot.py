@@ -1,30 +1,25 @@
 from pathlib import Path
 
+import fire
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
-import fire
+from plot_utils import filter_largest_load_factor_each_setting_w_99_attainment
+from plot_utils import pad_attainments_to_full_range_of_load_factor
+from plot_utils import plot_grouped_bar
+from plot_utils import prettify_gpus_and_counts
+from plot_utils import prettify_scheduler_str
+from plot_utils import scheduler2color
+from plot_utils import scheduler2hatch
 
-from .plot_for_paper import pad_attainments_to_full_range_of_load_factor
-from .plot_for_paper import pdfcrop
-from .plot_for_paper import plot_grouped_bar
-from .plot_for_paper_nsdi25 import filter_largest_load_factor_each_setting_w_99_attainment
-from .plot_for_paper_nsdi25 import prettify_gpus_and_counts
-from .plot_for_paper_nsdi25 import prettify_scheduler_str
-from .plot_for_paper_nsdi25 import scheduler2color
-from .plot_for_paper_nsdi25 import scheduler2hatch
-from .print_cluster_sim_xfer_time import print_cluster_sim_xfer_time
-
-RESULT_ROOT = Path("/export2/kong102/clusterserving_results")
+RESULT_ROOT = Path("./outputs")
 
 
 def read_main_results():
-    df_maf19 = pd.read_csv(
-        RESULT_ROOT / "cluster-logs/tf32sla-3dnns_padding-0.4_workload-weights-0.30-0.33-0.37_maf19/logs.csv")
+    df_maf19 = pd.read_csv(RESULT_ROOT / "cluster-logs/maf19/logs.csv")
     df_maf19['trace'] = 'MAF19'
 
-    df_maf21 = pd.read_csv(
-        RESULT_ROOT / "cluster-logs/tf32sla-3dnns_padding-0.4_workload-weights-0.39-0.26-0.35_maf21/logs.csv")
+    df_maf21 = pd.read_csv(RESULT_ROOT / "cluster-logs/maf21/logs.csv")
     df_maf21['trace'] = 'MAF21'
 
     df = pd.concat([df_maf19, df_maf21])
@@ -111,9 +106,8 @@ def plot_main_results_gain_barplot(verbose: bool = False):
     lgd = fig.legend(handles, labels, ncol=3, bbox_to_anchor=[0.53, 1.01], loc="center")
     fig.tight_layout()
 
-    savepath = "figs_atc25/main_results_gain_barplot.pdf"
+    savepath = "outputs/fig6.pdf"
     plt.savefig(savepath, bbox_extra_artists=(lgd,), bbox_inches="tight")
-    pdfcrop(savepath)
 
     if verbose:
         for trace in ['MAF19', 'MAF21']:
@@ -206,10 +200,9 @@ def plot_main_results_attainment_curve():
     handles, labels = axs[0, 0].get_legend_handles_labels()
     lgd = fig.legend(handles, labels, ncol=5, bbox_to_anchor=[0.5, 1.01], loc="center")
     fig.tight_layout()
-    savepath = "figs_atc25/main_results_attainment_curve.pdf"
+    savepath = "outputs/fig7.pdf"
     # https://stackoverflow.com/a/10154763/6060420
     plt.savefig(savepath, bbox_extra_artists=(lgd,), bbox_inches="tight")
-    pdfcrop(savepath)
 
 
 def plot_ablation_nexus_barplot():
@@ -263,7 +256,6 @@ def plot_ablation_nexus_barplot():
 
     savepath = "figs_atc25/ablation_nexus.pdf"
     plt.savefig(savepath)
-    pdfcrop(savepath)
 
 
 def plot_main_results_gpu_temporal_util_barplot():
@@ -353,24 +345,8 @@ def plot_main_results_gpu_temporal_util_barplot():
     lgd = fig.legend(handles, labels, ncol=3, bbox_to_anchor=[0.5, 1.05], loc="center")
     fig.tight_layout()
 
-    savepath = "figs_atc25/main_results_gpu_temporal_util_barplot.pdf"
+    savepath = "outputs/fig8.pdf"
     plt.savefig(savepath, bbox_extra_artists=(lgd,), bbox_inches="tight")
-    pdfcrop(savepath)
-
-
-def print_ablation_study_transfer_time():
-    full_bs = {
-        'v4': 0,
-        'nexus': 0,
-    }
-    # plans_5xL4sla_block-timing/tf32sla_padding-0.10_max-num-parts-3/efficientnet-b8_3rdparty_8xb32-aa-advprop_in1k_L4-T4_25-75_bw-gbps-10_sla-multiplier-5_v4.json
-    full_bs = 2
-
-    for s in ['nexus', 'v4']:
-        cluster_log = f'/export2/kong102/clusterserving_results/cluster-logs/ablation-nexus_padding-0.1_maf19/efficientnet-b8_3rdparty_8xb32-aa-advprop_in1k_L4-T4_25-75_bw-gbps-10_sla-multiplier-5_{s}/dnn-id-0/100/1-0.csv'
-
-        print(f'Transfer time for {s}:')
-        print_cluster_sim_xfer_time(cluster_log, full_bs)
 
 
 def prettify_trace_str(s):
@@ -390,4 +366,3 @@ if __name__ == "__main__":
     # plot_main_results_attainment_curve()
     # plot_ablation_nexus_barplot()
     # plot_main_results_gpu_temporal_util_barplot()
-    # print_ablation_study_transfer_time()

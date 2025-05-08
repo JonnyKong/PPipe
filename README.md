@@ -32,17 +32,21 @@ corresponding chunk ID.
 For reference, we've uploaded the expected outputs to
 `data/prepartition_mappings`.
 
-* **Main MILP**
+* **Main MILP** (ETA: 5mins)
 
 ```bash
 python milp_solver/run_ilp_v4_in_batch.py
 ```
 
-This writes the outputs to `outputs/plans/maf[19|21]`, one json file for each cluster.
+This computes an MILP plan for each group of 3 DNNs, for NP, DART-r, and PPipe
+respectively. The outputs are written to `outputs/plans/maf[19|21]`, one json
+file for each DNN group.
 
 For reference, we've uploaded the expected outputs to `data/plans`.
 
 ### Figures 6-8
+
+1. Run the simulator
 
 ```bash
 # Main results on MAF 19 traces (ETA: 10mins)
@@ -60,5 +64,5 @@ python scripts/plot.py fig8
 ### Fig 13
 
 ```bash
-python plot.py fig8
+python scripts/plot.py fig13
 ```
