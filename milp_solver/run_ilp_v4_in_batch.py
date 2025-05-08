@@ -9,7 +9,6 @@ from pathlib import Path
 import gurobipy as gp
 import numpy as np
 import pandas as pd
-from contract_layers import read_layerwise_runtime
 from group_dnns import get_random_grouping
 from gurobipy import GRB
 from ilp_v4 import get_datadir
@@ -28,11 +27,6 @@ def get_dnn_runtime(dnn):
         runtimes_ms = json.load(f)
     runtime_mean_us = np.mean([r["computeMs"] for r in runtimes_ms]) * 1000
     return runtime_mean_us
-
-
-def get_dnn_layerwise_runtime(dnn):
-    df = read_layerwise_runtime(get_datadir() / 'layer-timing-final' / dnn / 'L4-1' / 'runtime.csv')
-    return df[1].sum().item()
 
 
 def get_baseline_plan(cfg: MultitaskConfig, timelimit=None):
@@ -275,7 +269,8 @@ def plan_is_empty(plan):
     return len(plan) == 0
 
 
-def main_multitask_v2(sla_discount=0.0, group_size=3, workload_weights=None):
+def main_multitask_v2(sla_discount=0.0, group_size=3, workload_weights=None,
+                      savedir=Path('./plans')):
     """
     For NSDI '25, group DNNs into groups of 3.
 
@@ -375,12 +370,12 @@ def main_multitask_v2(sla_discount=0.0, group_size=3, workload_weights=None):
                     ),
                     f"plan_{scheduler}": json.dumps(plan, indent=2),
                 }
-            Path("outputs/plans").mkdir(exist_ok=True, parents=True)
-            with open(f"outputs/plans/{tag}_{scheduler}.json", "w") as f:
+            savedir.mkdir(exist_ok=True, parents=True)
+            with open(savedir / f"{tag}_{scheduler}.json", "w") as f:
                 json.dump(plan, f, indent=2)
 
         df = pd.concat([df, pd.json_normalize(row)])
-        df.to_csv("results_v4_multitask.csv", index=False)
+        df.to_csv("outputs/plans/milp_summary.csv", index=False)
 
 
 def get_norm_xput(xput_arr, workload_weights):
@@ -388,5 +383,11 @@ def get_norm_xput(xput_arr, workload_weights):
 
 
 if __name__ == "__main__":
+    # MAF '19
     main_multitask_v2(sla_discount=0.4, group_size=3,
-                      workload_weights=[0.39, 0.26, 0.35])
+                      workload_weights=[0.30, 0.33, 0.37],
+                      savedir=Path('outputs/plans/maf19'))
+    # MAF '21
+    main_multitask_v2(sla_discount=0.4, group_size=3,
+                      workload_weights=[0.39, 0.26, 0.35],
+                      savedir=Path('outputs/plans/maf21'))

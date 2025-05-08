@@ -1,0 +1,205 @@
+[
+  {
+    "xput": 901.7713365539453,
+    "config": {
+      "dnn_name": "colorization-v2",
+      "gpu_name_arr": [
+        "L4",
+        "P4"
+      ],
+      "sla": 71752.35999999999,
+      "num_mps_levels": [
+        1,
+        1
+      ],
+      "max_num_parts": 1,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        22369.621333333333,
+        11184.810666666666,
+        5592.405333333333,
+        5592.405333333333,
+        5592.405333333333,
+        5592.405333333333,
+        5592.405333333333,
+        5592.405333333333,
+        11184.810666666666
+      ],
+      "est_xput": 901.7713365539453,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 28701,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        1,
+        1
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 6,
+      "runtime_fmt": 1
+    },
+    "sla": 71752.35999999999,
+    "pipelines": [
+      {
+        "xput": 901.7713365539453,
+        "partitions": [
+          {
+            "dnn": "colorization-v2",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 2,
+            "num_gpu_per_server": 1,
+            "num_gpu": 14.0,
+            "lat_infer": 31050.0,
+            "lat_trans": 0.0,
+            "xput": 901.7713365539453
+          }
+        ],
+        "est_xput": 901.7713365539453,
+        "est_batch_build_lat": 1441.607142857143,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 28701,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ],
+    "mipgap": 0.0,
+    "runtime": 0.07491183280944824
+  },
+  {
+    "xput": 922.9349330872174,
+    "config": {
+      "dnn_name": "googlenet-v3-pytorch",
+      "gpu_name_arr": [
+        "L4",
+        "P4"
+      ],
+      "sla": 23436.5622659176,
+      "num_mps_levels": [
+        1,
+        1
+      ],
+      "max_num_parts": 1,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        14953.130666666666,
+        10764.8,
+        3538.944,
+        2508.7999999999997,
+        2508.7999999999997,
+        2508.7999999999997,
+        2508.7999999999997,
+        2508.7999999999997,
+        1529.0026666666668
+      ],
+      "est_xput": 964.2426677380474,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 9375,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        1,
+        1
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 6,
+      "runtime_fmt": 1
+    },
+    "sla": 23436.5622659176,
+    "pipelines": [
+      {
+        "xput": 922.9349330872174,
+        "partitions": [
+          {
+            "dnn": "googlenet-v3-pytorch",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 2,
+            "num_gpu_per_server": 1,
+            "num_gpu": 4.0,
+            "lat_infer": 8668.0,
+            "lat_trans": 0.0,
+            "xput": 922.9349330872174
+          }
+        ],
+        "est_xput": 964.2426677380474,
+        "est_batch_build_lat": 1348.2083333333333,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 9375,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ]
+  },
+  {
+    "xput": 877.6695783006645,
+    "config": {
+      "dnn_name": "repvgg-b3",
+      "gpu_name_arr": [
+        "L4",
+        "P4"
+      ],
+      "sla": 47539.976799242424,
+      "num_mps_levels": [
+        1,
+        1
+      ],
+      "max_num_parts": 1,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        6422.528,
+        3211.264,
+        1605.632,
+        1605.632,
+        1605.632,
+        1605.632,
+        1605.632,
+        1605.632,
+        1605.632
+      ],
+      "est_xput": 877.6695783006645,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 19016,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        1,
+        1
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 6,
+      "runtime_fmt": 1
+    },
+    "sla": 47539.976799242424,
+    "pipelines": [
+      {
+        "xput": 877.6695783006645,
+        "partitions": [
+          {
+            "dnn": "repvgg-b3",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 3,
+            "num_gpu_per_server": 1,
+            "num_gpu": 7.0,
+            "lat_infer": 23927.0,
+            "lat_trans": 0.0,
+            "xput": 877.6695783006645
+          }
+        ],
+        "est_xput": 877.6695783006645,
+        "est_batch_build_lat": 2962.390476190477,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 19016,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ]
+  }
+]

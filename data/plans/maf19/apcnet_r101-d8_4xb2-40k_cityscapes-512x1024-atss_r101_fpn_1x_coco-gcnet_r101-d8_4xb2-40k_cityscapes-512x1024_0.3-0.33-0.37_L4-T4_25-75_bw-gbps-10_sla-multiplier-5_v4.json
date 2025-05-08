@@ -1,0 +1,289 @@
+[
+  {
+    "xput": 543.6910165925689,
+    "config": {
+      "dnn_name": "apcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+      "gpu_name_arr": [
+        "L4",
+        "T4"
+      ],
+      "sla": 77895.4751552795,
+      "num_mps_levels": [
+        4,
+        4
+      ],
+      "max_num_parts": 2,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        2516.5824,
+        3355.4432,
+        3355.4432,
+        3355.4432,
+        3355.4432,
+        4194.304,
+        3355.4432,
+        6710.8864,
+        13421.7728
+      ],
+      "est_xput": 528.8556885039994,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 31158,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        4,
+        2
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 10,
+      "runtime_fmt": 1
+    },
+    "sla": 77895.4751552795,
+    "pipelines": [
+      {
+        "xput": 543.6910165925689,
+        "partitions": [
+          {
+            "dnn": "apcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+            "layers": [
+              0,
+              4
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 2,
+            "num_gpu": 26.0,
+            "lat_infer": 17226.0,
+            "lat_trans": 3355.4432,
+            "xput": 1509.3463369325439
+          },
+          {
+            "dnn": "apcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+            "layers": [
+              4,
+              10
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 4,
+            "num_gpu": 8.0,
+            "lat_infer": 12578.0,
+            "lat_trans": 0.0,
+            "xput": 596.0464477539062
+          }
+        ],
+        "est_xput": 528.8556885039994,
+        "est_batch_build_lat": 0.0,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 31158,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ],
+    "mipgap": 0.0,
+    "runtime": 3.0084140300750732
+  },
+  {
+    "xput": 607.5631432417428,
+    "config": {
+      "dnn_name": "atss_r101_fpn_1x_coco",
+      "gpu_name_arr": [
+        "L4",
+        "T4"
+      ],
+      "sla": 86734.32068965516,
+      "num_mps_levels": [
+        4,
+        4
+      ],
+      "max_num_parts": 2,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        10485.76,
+        5242.88,
+        5242.88,
+        7864.32,
+        7864.32,
+        3440.64,
+        6113.28,
+        1740.8
+      ],
+      "est_xput": 513.2006614586303,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 34694,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        4,
+        2
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 10,
+      "runtime_fmt": 1
+    },
+    "sla": 86734.32068965516,
+    "pipelines": [
+      {
+        "xput": 316.9195420512617,
+        "partitions": [
+          {
+            "dnn": "atss_r101_fpn_1x_coco",
+            "layers": [
+              0,
+              8
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 2,
+            "num_gpu_per_server": 4,
+            "num_gpu": 4.0,
+            "lat_infer": 25243.0,
+            "lat_trans": 3481.6,
+            "xput": 316.9195420512617
+          },
+          {
+            "dnn": "atss_r101_fpn_1x_coco",
+            "layers": [
+              8,
+              9
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 2,
+            "num_gpu_per_server": 2,
+            "num_gpu": 15.0,
+            "lat_infer": 20198.0,
+            "lat_trans": 0.0,
+            "xput": 1485.2955738191902
+          }
+        ],
+        "est_xput": 513.2006614586303,
+        "est_batch_build_lat": 2533.1222222222223,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 34694,
+        "hist_adjustment_w_scheduling": 0
+      },
+      {
+        "xput": 290.64360119048104,
+        "partitions": [
+          {
+            "dnn": "atss_r101_fpn_1x_coco",
+            "layers": [
+              0,
+              6
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 2,
+            "num_gpu": 12.0,
+            "lat_infer": 32649.0,
+            "lat_trans": 3440.64,
+            "xput": 367.5457134981163
+          },
+          {
+            "dnn": "atss_r101_fpn_1x_coco",
+            "layers": [
+              6,
+              9
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 4,
+            "num_gpu": 4.0,
+            "lat_infer": 11413.0,
+            "lat_trans": 0.0,
+            "xput": 290.6436011904762
+          }
+        ],
+        "est_xput": 513.2006614586303,
+        "est_batch_build_lat": 0.0,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 34694,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ]
+  },
+  {
+    "xput": 670.5522537970421,
+    "config": {
+      "dnn_name": "gcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+      "gpu_name_arr": [
+        "L4",
+        "T4"
+      ],
+      "sla": 69515.05939226519,
+      "num_mps_levels": [
+        4,
+        4
+      ],
+      "max_num_parts": 2,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        1677.7216,
+        3355.4432,
+        3355.4432,
+        3355.4432,
+        3355.4432,
+        3355.4432,
+        3355.4432,
+        6710.8864,
+        8388.608
+      ],
+      "est_xput": 597.5798018026991,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 27806,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        4,
+        2
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 10,
+      "runtime_fmt": 1
+    },
+    "sla": 69515.05939226519,
+    "pipelines": [
+      {
+        "xput": 670.5522537970421,
+        "partitions": [
+          {
+            "dnn": "gcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+            "layers": [
+              0,
+              3
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 2,
+            "num_gpu": 17.0,
+            "lat_infer": 16050.0,
+            "lat_trans": 3355.4432,
+            "xput": 1059.190031152648
+          },
+          {
+            "dnn": "gcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+            "layers": [
+              3,
+              10
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 4,
+            "num_gpu": 9.0,
+            "lat_infer": 11400.0,
+            "lat_trans": 0.0,
+            "xput": 670.5522537231445
+          }
+        ],
+        "est_xput": 597.5798018026991,
+        "est_batch_build_lat": 0.0,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 27806,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ]
+  }
+]

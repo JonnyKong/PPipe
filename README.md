@@ -2,6 +2,21 @@
 
 [ATC '25] Pipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism
 
+### Dependencies and Build
+
+* Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+* Build Java simulator
+
+```bash
+cd cluster-sim
+./gradlew installDist
+```
+
 ### MILP solver
 
 * **Prepartition MILP (sec 5.2)**
@@ -23,15 +38,27 @@ For reference, we've uploaded the expected outputs to
 python milp_solver/run_ilp_v4_in_batch.py
 ```
 
-This writes the outputs to `outputs/plans`, one json file for each cluster.
+This writes the outputs to `outputs/plans/maf[19|21]`, one json file for each cluster.
 
-For reference, we've uploaded the expected outputs to
-`data/plans`.
+For reference, we've uploaded the expected outputs to `data/plans`.
 
-### Simulator setup
+### Figures 6-8
+
 ```bash
-cd cluster-sim
-./gradlew installDist
+# Main results on MAF 19 traces (ETA: 10mins)
+./scripts/run_simulator.sh main_results_maf19
+# Main results on MAF 21 traces (ETA: 10mins)
+./scripts/run_simulator.sh main_results_maf21
 ```
 
-### Figure 6
+```bash
+python scripts/plot.py fig6
+python scripts/plot.py fig7
+python scripts/plot.py fig8
+```
+
+### Fig 13
+
+```bash
+python plot.py fig8
+```
