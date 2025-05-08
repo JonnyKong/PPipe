@@ -55,6 +55,8 @@ For reference, we've uploaded the expected outputs to `data/plans`.
 ./scripts/run_simulator.sh main_results_maf21
 ```
 
+2. Plot the figures
+
 ```bash
 python scripts/plot.py fig6
 python scripts/plot.py fig7
