@@ -480,11 +480,11 @@ def get_norm_xput(xput_arr, workload_weights):
 
 if __name__ == "__main__":
     expr = sys.argv[1]
-    if expr == 'maf19_main':
+    if expr == 'main_maf19':
         main_multitask_v2(sla_discount=0.4, group_size=3,
                           workload_weights=[0.30, 0.33, 0.37],
                           savedir=Path('outputs/plans/maf19'))
-    elif expr == 'maf21_main':
+    elif expr == 'main_maf21_main':
         main_multitask_v2(sla_discount=0.4, group_size=3,
                           workload_weights=[0.39, 0.26, 0.35],
                           savedir=Path('outputs/plans/maf21'))
@@ -493,3 +493,5 @@ if __name__ == "__main__":
                         sla_multipliers=[5],
                         clusters=[[["L4", "T4"], [25, 75], True, 2, [4, 4], [4, 2], 10]],
                         savedir=Path('outputs/plans/ablation'))
+    else:
+        raise NotImplementedError()

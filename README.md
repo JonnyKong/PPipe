@@ -37,8 +37,8 @@ For reference, we've uploaded the expected outputs to
 * **Main MILP** (ETA: 5mins)
 
 ```bash
-python milp_solver/run_ilp_v4_in_batch.py maf19
-python milp_solver/run_ilp_v4_in_batch.py maf21
+python milp_solver/run_ilp_v4_in_batch.py main_maf19
+python milp_solver/run_ilp_v4_in_batch.py main_maf21
 ```
 
 This computes an MILP plan for each group of 3 DNNs, for NP, DART-r, and PPipe
