@@ -53,7 +53,7 @@ git lfs install
 git lfs pull
 ```
 
-2. Install dependencies
+2. Install dependencies:
 
 ```bash
 conda create -n ppipe python=3.12   # Please choose a different environment name
@@ -61,7 +61,13 @@ conda activate ppipe
 pip install -r requirements.txt
 ```
 
-3. Build the Java-based simulator:
+3. Set up a [Gurobi
+   license](https://www.gurobi.com/academia/academic-program-and-licenses/)
+
+  * [**Note for ATC'25 artifact evaluation reviewers**]: A preconfigured
+    machine with credentials will be made available via HotCRP.
+
+4. Build the Java-based simulator:
 
 ```bash
 cd cluster-sim
