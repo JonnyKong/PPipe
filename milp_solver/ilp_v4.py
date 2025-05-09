@@ -23,7 +23,7 @@ class RuntimeFmt(IntEnum):
 
 def get_mapping_dir():
     dirs = [
-        '/export2/kong102/clusterserving_results/contraction_mappings_v2_V100-L4-T4-P4_bs4_no-const_fp16-int32-mlb',
+        'data/prepartition_mappings',
     ]
     for d in dirs:
         if Path(d).exists():
