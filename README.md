@@ -7,6 +7,8 @@
 * Install dependencies
 
 ```
+conda create -n ppipe python=3.12   # Please replace env name with a unique one
+conda activate ppipe
 pip install -r requirements.txt
 ```
 
