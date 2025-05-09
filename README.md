@@ -2,11 +2,53 @@
 
 [ATC '25] Pipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism
 
-### Dependencies and Build
+### Codebase structure
+
+```
+.
+├── cluster-sim             # The discrete-event simulator (sec 6)
+│
+├── data
+│   ├── maf_traces              # Microsoft MAF request traces
+│   ├── model_list.txt          # List of DNNs to be used
+│   ├── models                  # Model latencies and intermediate sizes from offline profiling
+│   ├── plans                   # MILP plans
+│   └── prepartition_mappings   # Pre-partition MILP (sec 5.2) output
+│
+├── milp_solver             # The MILP solver
+│   ├── contract_layers.py
+│   ├── group_dnns.py
+│   ├── prepartition_ilp.py     # Prepartition MILP implementation (sec 5.2)
+│   ├── ilp_v4.py               # Main MILP implementation (Appendix A)
+│   └── run_ilp_v4_in_batch.py  # Driver script to run the main MILP
+│
+├── outputs                 # Artifact outputs will be written here
+│   └── README.md
+│
+└── scripts
+    ├── parse_cluster_sim.py
+    ├── plot_utils.py
+    ├── plot.py
+    ├── run_sim_in_batch.py
+    ├── run_simulator.sh
+    └── sim_config.py
+
+```
+
+### Installation
+
+* Download code and data
+
+```bash
+git clone https://github.com/JonnyKong/PPipe
+cd PPipe
+git lfs install
+git lfs pull
+```
 
 * Install dependencies
 
-```
+```bash
 conda create -n ppipe python=3.12   # Please replace env name with a unique one
 conda activate ppipe
 pip install -r requirements.txt
