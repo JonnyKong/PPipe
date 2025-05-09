@@ -59,11 +59,12 @@ pip install -r requirements.txt
 ```bash
 cd cluster-sim
 ./gradlew installDist
+cd ..
 ```
 
 ### MILP solver
 
-* **Prepartition MILP (sec 5.2)**
+* **Prepartition MILP (sec 5.2)** (ETA: 5 mins)
 
 ```bash
 python milp_solver/prepartition_ilp.py
@@ -76,7 +77,7 @@ corresponding chunk ID.
 For reference, we've uploaded the expected outputs to
 `data/prepartition_mappings`.
 
-* **Main MILP** (ETA: 5mins)
+* **Main MILP** (ETA: 5 mins)
 
 ```bash
 python milp_solver/run_ilp_v4_in_batch.py main_maf19
