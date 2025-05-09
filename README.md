@@ -12,9 +12,15 @@ Clusters via Pool-Based Pipeline Parallelism
 ├── data
 │   ├── maf_traces              # Microsoft MAF request traces
 │   ├── model_list.txt          # List of DNN models
-│   ├── models                  # Latency and intermediate sizes from offline profiling
-│   ├── plans                   # MILP plans
-│   └── prepartition_mappings   # Prepartition MILP outputs (Sec. 5.2)
+│   ├── models                  # Offline profiling results
+│   │   ├── cuts-no-const           # Layer & edge names
+│   │   ├── model-profile-tf32      # Profiled latency per layer in TensorRT
+│   │   ├── node-profile-no-const   # Profiled latency per layer in ONNX
+│   │   ├── block-timing-tf32       # Profiled latency per pre-partitioned block in TensorRT
+│   │   └── shapes                  # Shapes and sizes of intermediate representations
+│
+│   ├── plans                   # Reference MILP plans
+│   └── prepartition_mappings   # Reference prepartition MILP outputs (Sec. 5.2)
 │
 ├── milp_solver             # The MILP solver
 │   ├── contract_layers.py
@@ -26,7 +32,7 @@ Clusters via Pool-Based Pipeline Parallelism
 ├── outputs                 # Outputs from running the artifact
 │   └── README.md
 │
-└── scripts
+└── scripts                 # Scripts for automating experiments, plotting figures, etc.
     ├── parse_cluster_sim.py
     ├── plot_utils.py
     ├── plot.py
@@ -63,9 +69,11 @@ cd cluster-sim
 cd ..
 ```
 
-### Running the MILP solver
+### Reproducing the paper
 
-**1. Prepartition MILP (sec 5.2)** -- ETA: 5 mins
+#### 1. Running the MILP solver
+
+**1.1 Prepartition MILP (sec 5.2)** -- ETA: 5 mins
 
 ```bash
 python milp_solver/prepartition_ilp.py
@@ -75,7 +83,7 @@ python milp_solver/prepartition_ilp.py
 * Each CSV maps DNN layer names to their corresponding chunk IDs.
 * Reference outputs are available in `data/prepartition_mappings/`.
 
-**2. Main MILP** -- ETA: 15 mins
+**1.2 Main MILP** -- ETA: 15 mins
 
 ```bash
 python milp_solver/run_ilp_v4_in_batch.py main_maf19
@@ -112,7 +120,7 @@ python milp_solver/run_ilp_v4_in_batch.py main_maf21
   ]
   ```
 
-**3. Ablation study MILP** (ETA: 3 mins)
+**1.3 Ablation study MILP** (ETA: 3 mins)
 
 ```bash
 python milp_solver/run_ilp_v4_in_batch.py ablation
@@ -120,7 +128,7 @@ python milp_solver/run_ilp_v4_in_batch.py ablation
 
 * Outputs are saved under `outputs/plans/ablation`.
 
-### Running the Discrete-event Simulator
+#### 2. Running the Discrete-event Simulator
 
 ```bash
 # Main results on MAF 19 traces (ETA: 20 mins)
@@ -144,7 +152,7 @@ python milp_solver/run_ilp_v4_in_batch.py ablation
     * `i-j.csv`: output of partition j on pipeline i, forwarded to the next
       partition if exists (each row is a batch)
 
-### Reproducing the Figures
+#### 3. Reproducing the Figures
 
 ```bash
 # Plot the figures (ETA: <1 min)
