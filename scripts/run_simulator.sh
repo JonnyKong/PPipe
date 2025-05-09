@@ -3,6 +3,7 @@ trap 'echo "Error on line $LINENO: $BASH_COMMAND"' ERR
 set -e
 
 DATA_DIR=./data
+OUTPUT_DIR=./outputs
 DURATION=30000000
 
 function check_and_confirm_overwrite() {
@@ -36,37 +37,37 @@ function check_and_confirm_overwrite() {
 }
 
 function main_results_maf19() {
-    PLANS_DIR=${DATA_DIR}/plans/maf19
+    PLANS_DIR=${OUTPUT_DIR}/plans/maf19
     LOGS_DIR=outputs/cluster-logs/maf19
     check_and_confirm_overwrite ${LOGS_DIR}
 
     python scripts/run_sim_in_batch.py multi_dnn_maf19 \
         ${DATA_DIR}/models/block-timing-tf32 \
-        ${DATA_DIR}/prepartition_mappings \
+        ${OUTPUT_DIR}/prepartition_mappings \
         ${PLANS_DIR} ${LOGS_DIR}
     python scripts/parse_cluster_sim.py multi_dnn_maf19 \
         --plans-dir ${PLANS_DIR} --logs-dir ${LOGS_DIR} --duration ${DURATION}
 }
 
 function main_results_maf21() {
-    PLANS_DIR=${DATA_DIR}/plans/maf21
+    PLANS_DIR=${OUTPUT_DIR}/plans/maf21
     LOGS_DIR=outputs/cluster-logs/maf21
     check_and_confirm_overwrite ${LOGS_DIR}
 
     python scripts/run_sim_in_batch.py multi_dnn_maf21 \
         ${DATA_DIR}/models/block-timing-tf32 \
-        ${DATA_DIR}/prepartition_mappings \
+        ${OUTPUT_DIR}/prepartition_mappings \
         ${PLANS_DIR} ${LOGS_DIR}
     python scripts/parse_cluster_sim.py multi_dnn_maf21 \
         --plans-dir ${PLANS_DIR} --logs-dir ${LOGS_DIR} --duration ${DURATION}
 }
 
 function ablation_results_maf19() {
-    PLANS_DIR=${DATA_DIR}/plans/ablation
+    PLANS_DIR=${OUTPUT_DIR}/plans/ablation
     LOGS_DIR=outputs/cluster-logs/ablation_maf19
     python scripts/run_sim_in_batch.py ablation_maf19 \
         ${DATA_DIR}/models/block-timing-tf32 \
-        ${DATA_DIR}/prepartition_mappings \
+        ${OUTPUT_DIR}/prepartition_mappings \
         ${PLANS_DIR} ${LOGS_DIR}
     python scripts/parse_cluster_sim.py ablation_maf19 \
         --plans-dir ${PLANS_DIR} --logs-dir ${LOGS_DIR} --duration ${DURATION}

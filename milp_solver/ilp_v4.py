@@ -23,7 +23,7 @@ class RuntimeFmt(IntEnum):
 
 def get_mapping_dir():
     dirs = [
-        'data/prepartition_mappings',
+        'outputs/prepartition_mappings',
     ]
     for d in dirs:
         if Path(d).exists():
