@@ -1,0 +1,90 @@
+[
+  {
+    "xput": 2757.5633173299493,
+    "config": {
+      "dnn_name": "apcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+      "gpu_name_arr": [
+        "L4",
+        "T4"
+      ],
+      "sla": 77895.4751552795,
+      "num_mps_levels": [
+        4,
+        4
+      ],
+      "max_num_parts": 3,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        2516.5824,
+        3355.4432,
+        3355.4432,
+        3355.4432,
+        3355.4432,
+        4194.304,
+        3355.4432,
+        6710.8864,
+        13421.7728
+      ],
+      "est_xput": 2757.5633173299493,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 7790,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        4,
+        2
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 10,
+      "runtime_fmt": 1
+    },
+    "pipelines": [
+      {
+        "xput": 1600.6914987274502,
+        "partitions": [
+          {
+            "dnn": "apcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 4,
+            "num_gpu": 25,
+            "lat_infer": 62473,
+            "lat_trans": 0.0
+          }
+        ],
+        "est_xput": 2757.5633173299493,
+        "est_batch_build_lat": 1414,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 7790,
+        "hist_adjustment_w_scheduling": 0
+      },
+      {
+        "xput": 1156.871818602499,
+        "partitions": [
+          {
+            "dnn": "apcnet_r101-d8_4xb2-40k_cityscapes-512x1024",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu": 75,
+            "lat_infer": 64830,
+            "lat_trans": 0.0
+          }
+        ],
+        "est_xput": 2757.5633173299493,
+        "est_batch_build_lat": 0,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 7790,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ],
+    "sla": 77895.4751552795
+  }
+]

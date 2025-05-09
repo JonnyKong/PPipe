@@ -35,7 +35,8 @@ For reference, we've uploaded the expected outputs to
 * **Main MILP** (ETA: 5mins)
 
 ```bash
-python milp_solver/run_ilp_v4_in_batch.py
+python milp_solver/run_ilp_v4_in_batch.py maf19
+python milp_solver/run_ilp_v4_in_batch.py maf21
 ```
 
 This computes an MILP plan for each group of 3 DNNs, for NP, DART-r, and PPipe
@@ -44,27 +45,29 @@ file for each DNN group.
 
 For reference, we've uploaded the expected outputs to `data/plans`.
 
-### Figures 6-8
-
-1. Run the simulator
-
+* **Ablation MILP**
 ```bash
-# Main results on MAF 19 traces (ETA: 10mins)
-./scripts/run_simulator.sh main_results_maf19
-# Main results on MAF 21 traces (ETA: 10mins)
-./scripts/run_simulator.sh main_results_maf21
+python milp_solver/run_ilp_v4_in_batch.py ablation
 ```
 
-2. Plot the figures
+### Figures 6, 7, 8
 
 ```bash
+# Main results on MAF 19 traces (ETA: 10 mins)
+./scripts/run_simulator.sh main_results_maf19
+# Main results on MAF 21 traces (ETA: 10 mins)
+./scripts/run_simulator.sh main_results_maf21
+# Plot the figures (ETA: <1 min)
 python scripts/plot.py fig6
 python scripts/plot.py fig7
 python scripts/plot.py fig8
 ```
 
-### Fig 13
+### Fig 10
 
 ```bash
-python scripts/plot.py fig13
+# Ablation study
+./scripts/run_simulator.sh ablation_results_maf19
+# Plot the figures (ETA: <1 min)
+python scripts/plot.py fig10
 ```

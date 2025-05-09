@@ -219,9 +219,7 @@ def plot_ablation_nexus_barplot():
         +---------+------------+---------------+----------------------------+
     and will not show BL due to low performance at 0.1 padding.
     """
-    result_dir = Path(
-        "/export2/kong102/clusterserving_results/cluster-logs/ablation-nexus_padding-0.1_maf19"
-    )
+    result_dir = Path("outputs/cluster-logs/ablation_maf19")
     df = pd.read_csv(result_dir / "logs.csv")
     df["attainment"] = (1 - df.perc_dropped) * (1 - df.perc_violate_sla) * 100.0
     df = filter_largest_load_factor_each_setting_w_99_attainment(
@@ -254,7 +252,7 @@ def plot_ablation_nexus_barplot():
 
     print(f'Ablation study load factors for {scheduler_arr}: {lf_arr}')
 
-    savepath = "figs_atc25/ablation_nexus.pdf"
+    savepath = "outputs/ablation.pdf"
     plt.savefig(savepath)
 
 
@@ -361,8 +359,5 @@ if __name__ == "__main__":
         'fig6': plot_main_results_gain_barplot,
         'fig7': plot_main_results_attainment_curve,
         'fig8': plot_main_results_gpu_temporal_util_barplot,
+        'fig10': plot_ablation_nexus_barplot,
     })
-    # plot_main_results_gain_barplot(verbose=True)
-    # plot_main_results_attainment_curve()
-    # plot_ablation_nexus_barplot()
-    # plot_main_results_gpu_temporal_util_barplot()

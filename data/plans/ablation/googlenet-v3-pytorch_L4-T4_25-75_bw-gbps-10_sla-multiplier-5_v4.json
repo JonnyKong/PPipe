@@ -1,0 +1,136 @@
+[
+  {
+    "xput": 10564.451729972676,
+    "config": {
+      "dnn_name": "googlenet-v3-pytorch",
+      "gpu_name_arr": [
+        "L4",
+        "T4"
+      ],
+      "sla": 23436.5622659176,
+      "num_mps_levels": [
+        4,
+        4
+      ],
+      "max_num_parts": 3,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        8971.8784,
+        6458.88,
+        2123.3664,
+        1505.28,
+        1505.28,
+        1505.28,
+        1505.28,
+        1505.28,
+        917.4015999999999
+      ],
+      "est_xput": 10335.497239927445,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 2344,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        4,
+        2
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 10,
+      "runtime_fmt": 1
+    },
+    "sla": 23436.5622659176,
+    "pipelines": [
+      {
+        "xput": 6087.168249337164,
+        "partitions": [
+          {
+            "dnn": "googlenet-v3-pytorch",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 5,
+            "num_gpu_per_server": 4,
+            "num_gpu": 25.0,
+            "lat_infer": 20535.0,
+            "lat_trans": 0.0,
+            "xput": 6087.1682493304115
+          }
+        ],
+        "est_xput": 10335.497239927445,
+        "est_batch_build_lat": 503.1204478398666,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 2344,
+        "hist_adjustment_w_scheduling": 0
+      },
+      {
+        "xput": 169.9331262255795,
+        "partitions": [
+          {
+            "dnn": "googlenet-v3-pytorch",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 2,
+            "num_gpu": 2.9999994103863807,
+            "lat_infer": 17654.0,
+            "lat_trans": 0.0,
+            "xput": 169.9331262255795
+          }
+        ],
+        "est_xput": 10335.497239927445,
+        "est_batch_build_lat": 0.0,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 2344,
+        "hist_adjustment_w_scheduling": 0
+      },
+      {
+        "xput": 4307.3502848409025,
+        "partitions": [
+          {
+            "dnn": "googlenet-v3-pytorch",
+            "layers": [
+              0,
+              9
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 2,
+            "num_gpu": 61.99999999999996,
+            "lat_infer": 14394.0,
+            "lat_trans": 917.4015999999999,
+            "xput": 4307.3502848409025
+          },
+          {
+            "dnn": "googlenet-v3-pytorch",
+            "layers": [
+              9,
+              10
+            ],
+            "gpu": "T4",
+            "mps": 1,
+            "bs": 1,
+            "num_gpu_per_server": 2,
+            "num_gpu": 10.0,
+            "lat_infer": 4603.0,
+            "lat_trans": 0.0,
+            "xput": 4344.992396263307
+          }
+        ],
+        "est_xput": 10335.497239927445,
+        "est_batch_build_lat": 0.0,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 2344,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ],
+    "mipgap": 1.253629276677866e-05,
+    "runtime": 127.86548948287964
+  }
+]

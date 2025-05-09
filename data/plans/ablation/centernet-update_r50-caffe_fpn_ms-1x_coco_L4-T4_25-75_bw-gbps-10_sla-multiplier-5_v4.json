@@ -1,0 +1,125 @@
+[
+  {
+    "xput": 3753.7467368620737,
+    "config": {
+      "dnn_name": "centernet-update_r50-caffe_fpn_ms-1x_coco",
+      "gpu_name_arr": [
+        "L4",
+        "T4"
+      ],
+      "sla": 66218.56842105264,
+      "num_mps_levels": [
+        4,
+        4
+      ],
+      "max_num_parts": 3,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        13107.199999999999,
+        5242.88,
+        7864.32,
+        4587.52,
+        6113.28,
+        4311.04,
+        1730.56,
+        1454.08
+      ],
+      "est_xput": 3153.1179940705997,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 6622,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        4,
+        2
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 10,
+      "runtime_fmt": 1
+    },
+    "sla": 66218.56842105264,
+    "pipelines": [
+      {
+        "xput": 2559.648991426788,
+        "partitions": [
+          {
+            "dnn": "centernet-update_r50-caffe_fpn_ms-1x_coco",
+            "layers": [
+              0,
+              8
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 2,
+            "num_gpu_per_server": 4,
+            "num_gpu": 25.0,
+            "lat_infer": 19475.0,
+            "lat_trans": 2908.16,
+            "xput": 2567.3940949935813
+          },
+          {
+            "dnn": "centernet-update_r50-caffe_fpn_ms-1x_coco",
+            "layers": [
+              8,
+              9
+            ],
+            "gpu": "T4",
+            "mps": 1,
+            "bs": 2,
+            "num_gpu_per_server": 2,
+            "num_gpu": 21.000000237872197,
+            "lat_infer": 32817.0,
+            "lat_trans": 0.0,
+            "xput": 2559.6489914217873
+          }
+        ],
+        "est_xput": 3153.1179940705997,
+        "est_batch_build_lat": 412.29031150899976,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 6622,
+        "hist_adjustment_w_scheduling": 0
+      },
+      {
+        "xput": 1194.0977454297329,
+        "partitions": [
+          {
+            "dnn": "centernet-update_r50-caffe_fpn_ms-1x_coco",
+            "layers": [
+              0,
+              8
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu_per_server": 2,
+            "num_gpu": 42.0,
+            "lat_infer": 35173.0,
+            "lat_trans": 1454.08,
+            "xput": 1194.097745429733
+          },
+          {
+            "dnn": "centernet-update_r50-caffe_fpn_ms-1x_coco",
+            "layers": [
+              8,
+              9
+            ],
+            "gpu": "T4",
+            "mps": 1,
+            "bs": 1,
+            "num_gpu_per_server": 2,
+            "num_gpu": 11.999999762405595,
+            "lat_infer": 19618.0,
+            "lat_trans": 0.0,
+            "xput": 1223.366272036456
+          }
+        ],
+        "est_xput": 3153.1179940705997,
+        "est_batch_build_lat": 0.0,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 6622,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ],
+    "mipgap": 9.27786292116442e-05,
+    "runtime": 1604.7313959598541
+  }
+]

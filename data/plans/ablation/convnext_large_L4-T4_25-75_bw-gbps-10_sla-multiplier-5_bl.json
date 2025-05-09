@@ -1,0 +1,90 @@
+[
+  {
+    "xput": 4723.457945310742,
+    "config": {
+      "dnn_name": "convnext_large",
+      "gpu_name_arr": [
+        "L4",
+        "T4"
+      ],
+      "sla": 53228.65572033898,
+      "num_mps_levels": [
+        4,
+        4
+      ],
+      "max_num_parts": 3,
+      "bs_same": true,
+      "transmit_time_us_arr": [
+        1101.0048000000002,
+        2202.0096000000003,
+        550.5024000000001,
+        275.25120000000004,
+        275.25120000000004,
+        275.25120000000004,
+        275.25120000000004,
+        275.25120000000004,
+        137.62560000000002
+      ],
+      "est_xput": 4723.457945310742,
+      "batch_build_factor": 1.3,
+      "hist_adjustment": 5323,
+      "hist_adjustment_w_scheduling": 0,
+      "num_gpu_per_server_arr": [
+        4,
+        2
+      ],
+      "force_sum_gpu_integer_per_partition": true,
+      "bw_gbps": 10,
+      "runtime_fmt": 1
+    },
+    "pipelines": [
+      {
+        "xput": 2742.37072464404,
+        "partitions": [
+          {
+            "dnn": "convnext_large",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "L4",
+            "mps": 0,
+            "bs": 5,
+            "num_gpu": 25,
+            "lat_infer": 45581,
+            "lat_trans": 0.0
+          }
+        ],
+        "est_xput": 4723.457945310742,
+        "est_batch_build_lat": 1101,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 5323,
+        "hist_adjustment_w_scheduling": 0
+      },
+      {
+        "xput": 1981.0872206667018,
+        "partitions": [
+          {
+            "dnn": "convnext_large",
+            "layers": [
+              0,
+              10
+            ],
+            "gpu": "T4",
+            "mps": 0,
+            "bs": 1,
+            "num_gpu": 75,
+            "lat_infer": 37858,
+            "lat_trans": 0.0
+          }
+        ],
+        "est_xput": 4723.457945310742,
+        "est_batch_build_lat": 0,
+        "batch_build_factor": 1.3,
+        "hist_adjustment": 5323,
+        "hist_adjustment_w_scheduling": 0
+      }
+    ],
+    "sla": 53228.65572033898
+  }
+]

@@ -62,24 +62,13 @@ function main_results_maf21() {
 }
 
 function ablation_results_maf19() {
-    PLANS_DIR=${DATA_DIR}/plans_5xL4sla_block-timing/tf32sla_padding-0.10_max-num-parts-3
-    LOGS_DIR=outputs/cluster-logs/ablation-nexus_padding-0.1_maf19
+    PLANS_DIR=${DATA_DIR}/plans/ablation
+    LOGS_DIR=outputs/cluster-logs/ablation_maf19
     python scripts/run_sim_in_batch.py ablation_maf19 \
         ${DATA_DIR}/models/block-timing-tf32 \
         ${DATA_DIR}/prepartition_mappings \
         ${PLANS_DIR} ${LOGS_DIR}
     python scripts/parse_cluster_sim.py ablation_maf19 \
-        --plans-dir ${PLANS_DIR} --logs-dir ${LOGS_DIR} --duration ${DURATION}
-}
-
-function ablation_results_maf21() {
-    PLANS_DIR=${DATA_DIR}/plans_5xL4sla_block-timing/tf32sla_padding-0.10_max-num-parts-3
-    LOGS_DIR=outputs/cluster-logs/ablation-nexus_padding-0.1_maf21
-    python scripts/run_sim_in_batch.py ablation_maf21 \
-        ${DATA_DIR}/models/block-timing-tf32 \
-        ${DATA_DIR}/prepartition_mappings \
-        ${PLANS_DIR} ${LOGS_DIR}
-    python scripts/parse_cluster_sim.py ablation_maf21 \
         --plans-dir ${PLANS_DIR} --logs-dir ${LOGS_DIR} --duration ${DURATION}
 }
 

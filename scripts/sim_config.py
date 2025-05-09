@@ -88,10 +88,7 @@ def multitask_configs(plan_root, log_root,
 
 
 def ablation_configs(plan_root, log_root, use_trace_arrival):
-    dnn_name_arr = pd.read_csv(
-        "scripts/trt/model-zoo/selected_models.txt", sep=" ", header=None
-    )[0].to_numpy()
-
+    dnn_name_arr = pd.read_csv("data/model_list.txt", sep=" ", header=None)[0].to_numpy()
     clusters = [
         [["L4", "T4"], [25, 75], 10],
     ]

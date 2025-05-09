@@ -2,6 +2,7 @@ import bisect
 import copy
 import itertools
 import json
+import sys
 import time
 from dataclasses import asdict
 from pathlib import Path
@@ -378,16 +379,117 @@ def main_multitask_v2(sla_discount=0.0, group_size=3, workload_weights=None,
         df.to_csv("outputs/plans/milp_summary.csv", index=False)
 
 
+def main_singletask(sla_discount,
+                    sla_multipliers,
+                    clusters,
+                    savedir):
+    dnn_arr = pd.read_csv("data/model_list.txt", sep=" ", header=None)[0].to_numpy()
+    # clusters = [
+    #     [["L4", "T4"], [25, 75], True, 3, [4, 4], [4, 2], 10],
+    # ]
+    # sla_multipliers = [2, 4, 5, 6, 8, 10]
+    runtime_fmt = RuntimeFmt.BLOCKWISE
+    configs = itertools.product(dnn_arr, clusters, sla_multipliers)
+    configs = list(configs)
+
+    df = pd.DataFrame()
+    lat_arr = []
+    for dnn, cluster, sla_multiplier in configs:
+        (
+            gpu_name_arr,
+            gpu_limit_arr,
+            force_sum_gpu_integer_per_partition,
+            max_parts,
+            num_mps_levels,
+            num_gpu_per_server_arr,
+            bw_gbps,
+        ) = cluster
+
+        sla = get_dnn_runtime(dnn) * sla_multiplier
+        hist_adjustment = round(sla * sla_discount)
+
+        tag = f'{dnn}_{"-".join(gpu_name_arr)}_{"-".join([str(s) for s in gpu_limit_arr])}_bw-gbps-{bw_gbps}_sla-multiplier-{sla_multiplier}'
+
+        # Estimate an approximate xput
+        cfg = MultitaskConfig(
+            [dnn],
+            gpu_limit_arr,
+            gpu_name_arr,
+            [sla],
+            [1.0],
+            num_mps_levels,
+            max_parts,
+            True,
+            None,
+            1.3,
+            [hist_adjustment],
+            [0],
+            num_gpu_per_server_arr,
+            force_sum_gpu_integer_per_partition,
+            bw_gbps,
+            runtime_fmt,
+        )
+        plan_bl_xput_est = get_baseline_plan(cfg)
+        if not plan_is_empty(plan_bl_xput_est):
+            xput_est = plan_bl_xput_est[0]["xput"]
+            cfg.est_xput_arr = [xput_est]
+
+        row = {
+            "dnn": dnn,
+            "sla": sla,
+            "sla_multiplier": sla_multiplier,
+            "gpu_name_arr": str(gpu_name_arr),
+            "gpu_limit_arr": str(gpu_limit_arr),
+            "max_parts": max_parts,
+            "num_mps_levels": str(num_mps_levels),
+            "num_gpu_per_server_arr": str(num_gpu_per_server_arr),
+            "force_sum_gpu_integer_per_partition": force_sum_gpu_integer_per_partition,
+            "bw_gbps": bw_gbps,
+        }
+
+        scheduler_fns = [
+            ("bl", get_baseline_plan),
+            # ('dart', get_dart_plan),
+            ("v4", get_ilp_plan),
+            # ("even_prepart", get_even_prepart_plan),
+        ]
+        for scheduler, fn in scheduler_fns:
+            start = time.time()
+            plan = fn(cfg)
+            end = time.time()
+
+            if scheduler == "v4":
+                lat_arr.append(end - start)
+
+            if not plan_is_empty(plan):
+                row |= {
+                    f"xput_{scheduler}": plan[0]["xput"],
+                    f"plan_{scheduler}": json.dumps(plan, indent=2),
+                }
+            savedir.mkdir(exist_ok=True)
+            with open(savedir / f"{tag}_{scheduler}.json", "w") as f:
+                json.dump(plan, f, indent=2)
+
+        df = pd.concat([df, pd.json_normalize(row)])
+        df.to_csv(savedir / "results_v4.csv", index=False)
+
+
 def get_norm_xput(xput_arr, workload_weights):
     return np.min([x / w for x, w in zip(xput_arr, workload_weights)])
 
 
 if __name__ == "__main__":
-    # MAF '19
-    main_multitask_v2(sla_discount=0.4, group_size=3,
-                      workload_weights=[0.30, 0.33, 0.37],
-                      savedir=Path('outputs/plans/maf19'))
-    # MAF '21
-    main_multitask_v2(sla_discount=0.4, group_size=3,
-                      workload_weights=[0.39, 0.26, 0.35],
-                      savedir=Path('outputs/plans/maf21'))
+    expr = sys.argv[1]
+    if expr == 'maf19_main':
+        main_multitask_v2(sla_discount=0.4, group_size=3,
+                          workload_weights=[0.30, 0.33, 0.37],
+                          savedir=Path('outputs/plans/maf19'))
+    elif expr == 'maf21_main':
+        main_multitask_v2(sla_discount=0.4, group_size=3,
+                          workload_weights=[0.39, 0.26, 0.35],
+                          savedir=Path('outputs/plans/maf21'))
+    elif expr == 'ablation':
+        main_singletask(sla_discount=0.1,
+                        sla_multipliers=[5],
+                        clusters=[[["L4", "T4"], [25, 75], True, 2, [4, 4], [4, 2], 10]],
+                        savedir=Path('outputs/plans/ablation'))
