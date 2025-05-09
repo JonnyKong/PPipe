@@ -18,8 +18,8 @@ Clusters via Pool-Based Pipeline Parallelism
 │   │   ├── node-profile-no-const   # Profiled latency per layer in ONNX
 │   │   ├── block-timing-tf32       # Profiled latency per pre-partitioned block in TensorRT
 │   │   └── shapes                  # Shapes and sizes of intermediate representations
-│
-│   ├── plans                   # Reference MILP plans
+│   │   
+│   ├── plans                   # Reference partition plans from the MILP
 │   └── prepartition_mappings   # Reference prepartition MILP outputs (Sec. 5.2)
 │
 ├── milp_solver             # The MILP solver
@@ -71,9 +71,9 @@ cd ..
 
 ### Reproducing the paper
 
-#### 1. Running the MILP solver
+#### 1. Running the MILP Solver to Generate Partition Plans
 
-**1.1 Prepartition MILP (sec 5.2)** -- ETA: 5 mins
+**1.1 Prepartition MILP (Sec. 5.2)** -- ETA: 5 mins
 
 ```bash
 python milp_solver/prepartition_ilp.py
@@ -83,7 +83,7 @@ python milp_solver/prepartition_ilp.py
 * Each CSV maps DNN layer names to their corresponding chunk IDs.
 * Reference outputs are available in `data/prepartition_mappings/`.
 
-**1.2 Main MILP** -- ETA: 15 mins
+**1.2 MILP for the Main Results** -- ETA: 15 mins
 
 ```bash
 python milp_solver/run_ilp_v4_in_batch.py main_maf19
@@ -120,7 +120,7 @@ python milp_solver/run_ilp_v4_in_batch.py main_maf21
   ]
   ```
 
-**1.3 Ablation study MILP** (ETA: 3 mins)
+**1.3 MILP for the Ablation Study** (ETA: 3 mins)
 
 ```bash
 python milp_solver/run_ilp_v4_in_batch.py ablation
@@ -128,7 +128,7 @@ python milp_solver/run_ilp_v4_in_batch.py ablation
 
 * Outputs are saved under `outputs/plans/ablation`.
 
-#### 2. Running the Discrete-event Simulator
+#### 2. Running the Discrete-event Simulator using the MILP-generated Plans
 
 ```bash
 # Main results on MAF 19 traces (ETA: 20 mins)
@@ -140,7 +140,8 @@ python milp_solver/run_ilp_v4_in_batch.py ablation
 ```
 
 * For each MILP plan, we iterates over decreasing load factors from 1.0 (step
-  size 0.5) until 99% SLO attainment is achieved.
+  size 0.5), run a inference session using each load factor, until 99% SLO
+  attainment is achieved.
 * The outputs will be written to `outputs/cluster-logs/`, with folder names
   formatted as:
     * `<dnns>_<gpus>_<gpu-counts>_<bandwidth>_sla-multiplier-5_<algo>`, where:
@@ -151,6 +152,11 @@ python milp_solver/run_ilp_v4_in_batch.py ablation
     * `master.csv`: frontend load balancer output (each row is a batch)
     * `i-j.csv`: output of partition j on pipeline i, forwarded to the next
       partition if exists (each row is a batch)
+* For each set of experiments, a CSV will be produced with each row
+  representing a session:
+    * `outputs/cluster-logs/maf19/logs.csv`
+    * `outputs/cluster-logs/maf21/logs.csv`
+    * `outputs/cluster-logs/ablation/logs.csv`
 
 #### 3. Reproducing the Figures
 
