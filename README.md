@@ -141,7 +141,7 @@ python milp_solver/run_ilp_v4_in_batch.py ablation
 ./scripts/run_simulator.sh main_results_maf19
 # Main results on MAF 21 traces (ETA: 20 mins)
 ./scripts/run_simulator.sh main_results_maf21
-# Ablation study (ETA: 5 mins)
+# Ablation study (ETA: 20 mins)
 ./scripts/run_simulator.sh ablation_results_maf19
 ```
 

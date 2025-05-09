@@ -26,7 +26,9 @@ public class IlpPartitionedModel implements Model {
         // Read latency table
         Table latencyTable =
                 Table.read().csv(CsvReadOptions.builder(latencyFile).header(false).build());
-        var range = Selection.withRange(startLayerId, endLayerId);
+        var range = Selection.withRange(
+                startLayerId,
+                Math.min(endLayerId, latencyTable.rowCount()));
         for (int i = 0; i < latencyTable.columnCount(); i++) {
             totalLatencies.add((int) latencyTable.intColumn(i).where(range).sum());
         }

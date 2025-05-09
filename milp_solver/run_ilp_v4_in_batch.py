@@ -455,7 +455,7 @@ def main_singletask(sla_discount,
         ]
         for scheduler, fn in scheduler_fns:
             start = time.time()
-            plan = fn(cfg)
+            plan = fn(cfg, timelimit=60)
             end = time.time()
 
             if scheduler == "v4":
@@ -466,7 +466,7 @@ def main_singletask(sla_discount,
                     f"xput_{scheduler}": plan[0]["xput"],
                     f"plan_{scheduler}": json.dumps(plan, indent=2),
                 }
-            savedir.mkdir(exist_ok=True)
+            savedir.mkdir(exist_ok=True, parents=True)
             with open(savedir / f"{tag}_{scheduler}.json", "w") as f:
                 json.dump(plan, f, indent=2)
 
@@ -491,7 +491,7 @@ if __name__ == "__main__":
     elif expr == 'ablation':
         main_singletask(sla_discount=0.1,
                         sla_multipliers=[5],
-                        clusters=[[["L4", "T4"], [25, 75], True, 2, [4, 4], [4, 2], 10]],
+                        clusters=[[["L4", "T4"], [25, 75], True, 3, [4, 4], [4, 2], 10]],
                         savedir=Path('outputs/plans/ablation'))
     else:
         raise NotImplementedError()
