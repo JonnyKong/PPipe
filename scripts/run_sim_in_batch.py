@@ -66,7 +66,7 @@ def run(
                 --dnn-id={dnn_id} \
                 --lb={lb}"
         if use_trace:
-            trace_path = '/export2/kong102/clusterserving_results/maf_traces/azure_functions_trace_2021/AzureFunctionsInvocationTraceForTwoWeeksJan2021.txt'
+            trace_path = 'data/maf_traces/azure_functions_trace_2021/AzureFunctionsInvocationTraceForTwoWeeksJan2021.txt'
             cmd += f' --trace-path={trace_path}'
         os.system(cmd)
 

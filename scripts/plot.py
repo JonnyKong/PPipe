@@ -252,7 +252,7 @@ def plot_ablation_nexus_barplot():
 
     print(f'Ablation study load factors for {scheduler_arr}: {lf_arr}')
 
-    savepath = "outputs/ablation.pdf"
+    savepath = "outputs/fig10.pdf"
     plt.savefig(savepath)
 
 

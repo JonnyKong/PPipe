@@ -484,7 +484,7 @@ if __name__ == "__main__":
         main_multitask_v2(sla_discount=0.4, group_size=3,
                           workload_weights=[0.30, 0.33, 0.37],
                           savedir=Path('outputs/plans/maf19'))
-    elif expr == 'main_maf21_main':
+    elif expr == 'main_maf21':
         main_multitask_v2(sla_discount=0.4, group_size=3,
                           workload_weights=[0.39, 0.26, 0.35],
                           savedir=Path('outputs/plans/maf21'))
