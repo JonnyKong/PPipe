@@ -79,7 +79,7 @@ cd ..
 
 #### 1. Running the MILP Solver to Generate Partition Plans
 
-**1.1 Prepartition MILP (Sec. 5.2)** -- ETA: 5 mins
+**1.1 Prepartition MILP (Sec. 5.2)** -- ETA: 10 mins
 
 ```bash
 python milp_solver/prepartition_ilp.py
@@ -126,7 +126,7 @@ python milp_solver/run_ilp_v4_in_batch.py main_maf21
   ]
   ```
 
-**1.3 MILP for the Ablation Study** (ETA: 3 mins)
+**1.3 MILP for the Ablation Study** (ETA: 10 mins)
 
 ```bash
 python milp_solver/run_ilp_v4_in_batch.py ablation
